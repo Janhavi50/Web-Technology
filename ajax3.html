@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div id="demo">
+	</div>
+	<script>
+		var a=30;
+		var b=20;
+		var c=a*b;
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange=function(){
+			if(this.readyState == 4 && this.status == 200){
+				document.getElementById("demo").innerHTML=c;
+			}
+		};
+		xhttp.open("GET","",true);
+		xhttp.send();
+	</script>
+</body>
+</html>
